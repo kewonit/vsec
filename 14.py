@@ -4,10 +4,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.linear_model import LogisticRegression
 
-# Load data
 data = pd.read_csv('datasets/heart.csv')
 
-# Original Logistic Regression Plot
 X = data['oldpeak'].values.reshape(-1, 1)
 y = data['target']
 model = LogisticRegression(max_iter=1000)
